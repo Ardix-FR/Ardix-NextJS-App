@@ -1,0 +1,507 @@
+/* MAIN CONFIGURATION */
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Segoe UI Emoji", sans-serif;
+}
+
+body {
+  scroll-behavior: smooth;
+  background-color: rgb(219, 219, 219);
+}
+
+/* .label {
+  background-color: black;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+} */
+/* END OF MAIN CONFIGURATION */
+
+/* NAV-BAR */
+.nav-bar {
+  background-color: white;
+  padding: 20px;
+  padding-bottom: 30px;
+}
+
+.nav-bar .logo {
+  width: 45px;
+  margin-left: 8%;
+}
+
+.nav-bar .search-bar {
+  margin-left: 17%;
+  border-radius: 10px;
+  padding-left: 40px;
+  padding-right: 5px;
+  width: 45%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: rgb(219, 219, 219);
+  border-color: transparent;
+  margin-top: 10px;
+  position: absolute;
+}
+
+/* .nav-bar .search-bar[type=text]:focus {
+  box-shadow: 10px 0px 100px black;
+} */
+
+.nav-bar .search-logo {
+  position: absolute;
+  color: gray;
+  margin-top: 15px;
+  margin-left: 17.5%;
+  width: 24.5px;
+}
+
+.gg-bell,
+.gg-bell::before {
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px
+}
+
+.gg-bell {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    border: 2px solid;
+    border-bottom: 0;
+    color: black;
+    cursor: pointer;
+    margin-left: 85%;
+    margin-top: -28px;
+    position: absolute;
+    width: 14px;
+    height: 14px
+}
+
+.gg-bell::after,
+.gg-bell::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    color: black;
+}
+
+.gg-bell::before {
+    background: currentColor;
+    color: black;
+    width: 4px;
+    height: 4px;
+    top: -4px;
+    left: 3px
+}
+
+.gg-bell::after {
+    border-radius: 3px;
+    width: 16px;
+    height: 10px;
+    border: 6px solid transparent;
+    border-top: 1px solid transparent;
+    box-shadow:
+        inset 0 0 0 4px,
+        0 -2px 0 0;
+    color: black;
+    cursor: pointer;
+    top: 14px;
+    left: -3px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px
+}
+
+.nav-bar .avatar {
+  width: 40px;
+  position: absolute;
+  margin-left: 76%;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.nav-bar .notif-round {
+  background-color: blue;
+  color: transparent;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  margin-left: 85.44%;
+  margin-top: -30px;
+  border-radius: 50%;
+}
+
+.gg-box {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs,1));
+  width: 22px;
+  height: 20px;
+  border: 2px solid;
+  border-radius: 3px;
+  color: black;
+}
+
+.package-icon {
+  text-decoration: none!important;
+  color: black;
+  cursor: pointer;
+  margin-left: 73%;
+  margin-top: 18px;
+  position: absolute;
+}
+
+.package-icon:hover {
+  color: black;
+}
+
+.gg-box::after,
+.gg-box::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  border-radius: 3px;
+  height: 2px;
+  background: currentColor
+}
+.gg-box::before {
+  left: 6px;
+  width: 6px;
+  top: 8px
+}
+.gg-box::after {
+  width: 22px;
+  left: -2px;
+  top: 4px
+}
+/* END OF NAV-BAR */
+
+.popup-container {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  /* right: 100%; 
+  transform: translate(100%, 0); */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(41, 37, 37, 0.72);
+}
+
+.popup-content {
+  background-color: #fefefe;
+  padding: 20px;
+  border: 1px solid #888;
+  margin-left: 80%;
+  /* border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px; */
+  position: relative;
+  z-index: 5;
+  height: 100%;
+}
+
+.popup-content-tchat {
+  background-color: #fefefe;
+  padding: 20px;
+  border: 1px solid #888;
+  /* border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px; */
+  position: relative;
+  z-index: 5;
+  height: 100%;
+  width: 100%;
+}
+
+.popup-content .card .card-body h1 {
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.popup-content .card .card-body p {
+  font-size: 14px;
+  /*  font-weight: 700; */
+  line-height: 20px;
+}
+
+.popup-content .card .card-body span {
+  color: white;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 15px;
+  border-radius: 20px;
+  padding-right: 15px;
+  font-size: 14px;
+  background-color: blue;
+  position: absolute;
+  margin-top: 0px;
+}
+
+.popup-content .close {
+  float: right;
+  margin-top: -5px;
+  margin-left: 20px;
+  color: black;
+  cursor: pointer;
+}
+
+.popup-content-tchat .close {
+  float: right;
+  margin-top: -5px;
+  margin-left: 20px;
+  color: black;
+  cursor: pointer;
+}
+
+.gg-close {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs,1));
+  width: 22px;
+  height: 22px;
+  border: 2px solid transparent;
+  border-radius: 40px
+}
+
+.gg-close::after,
+.gg-close::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 16px;
+  height: 2px;
+  background: currentColor;
+  transform: rotate(45deg);
+  border-radius: 5px;
+  top: 8px;
+  left: 1px
+}
+
+.gg-close::after {
+  transform: rotate(-45deg)
+}
+
+.popup-container:target{
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* ACCOUNT SIDE-BAR : */
+.profile-view {
+  background-color: #0b60da;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 45px;
+  width: 330px;
+  border-radius: 10px;
+  padding: 10px;
+  height: 63px;
+}
+
+.profile-view .user-picture {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.profile-view .pseudo {
+  color: white;
+  font-weight: bold;
+  font-size: 17px;
+  margin-left: 50px;
+  margin-top: -42px;
+}
+
+.profile-view .email {
+  color: white;
+  margin-left: 50px;
+  margin-top: -25px;
+}
+
+.profile-view .gg-log-in {
+  float: right;
+  margin-top: -44px;
+  color: white;
+  cursor: pointer;
+  margin-right: 20px;
+  width: 10px;
+  height: 20px;
+}
+
+.app-version {
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 15px;
+  font-size: 15px;
+  margin-left: 6%;
+}
+
+.account-infos {
+  margin-right: 30px;
+}
+
+.account-infos h1 {
+  font-size: 30px;
+}
+
+.account-infos .order-button {
+  width: 250px;
+  cursor: pointer;
+}
+/* END OF ACCOUNT SIDE-BAR */
+
+/* ADD POST BUTTON : */
+.add-post-button {
+  background-color: #0b60da!important;
+  color: white;
+  border-color: transparent;
+  cursor: pointer;
+  width: 55px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding-bottom: 51px;
+  font-size: 30px;
+  height: 50px;
+  border-radius: 100%;
+
+  margin-bottom: 120px;
+  position: fixed;
+  margin-right: 20px;
+  bottom: 0;
+  left: 94%;
+}
+/* END OF ADD POST BUTTON */
+
+/* TCHAT BUTTON : */
+.tchat-button {
+  background-color: #0b60da!important;
+  color: white;
+  border-color: transparent;
+  cursor: pointer;
+  width: 55px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  padding-left: 15px;
+  padding-bottom: 5px;
+
+  font-size: 30px;
+  height: 50px;
+  border-radius: 100%;
+
+  margin-bottom: 190px;
+  position: fixed;
+  margin-right: 20px;
+  bottom: 0;
+  left: 94%;
+}
+
+.tchat-button .fa-comment-alt {
+  font-size: 20px;
+  margin-top: -6px;
+  right: 15px;
+  position: absolute;
+}
+/* TCHAT BUTTON */
+
+/* ADD POST MODAL : */
+#add-post .popup-content img {
+  width: 360px;
+  border-radius: 10px;
+  margin-top: -25%;
+}
+
+#add-post .card {
+  /* margin-left: 20px; */
+  margin-top: -30px;
+}
+
+#add-post .card p {
+  font-size: 15px;
+}
+
+.connected-input {
+  border-radius: 5px;
+  width: 300px;
+  padding-left: 15px;
+  margin-bottom: 10px;
+}
+/* END OF ADD POST MODAL */
+
+.not-connected-text {
+  font-size: 15px!important;
+}
+
+.gg-comment {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs,1));
+  width: 20px;
+  height: 16px;
+  border: 2px solid;
+  border-bottom: 0;
+  box-shadow:
+      -6px 8px 0 -6px,
+      6px 8px 0 -6px
+}
+
+.gg-comment::after,
+.gg-comment::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 8px
+}
+
+.gg-comment::before {
+  border: 2px solid;
+  border-top-color: transparent;
+  border-bottom-left-radius: 20px;
+  right: 4px;
+  bottom: -6px;
+  height: 6px
+}
+
+.gg-comment::after {
+  height: 2px;
+  background: currentColor;
+  box-shadow: 0 4px 0 0;
+  left: 4px;
+  top: 4px
+}
+
+/* FOOTER STYLE : */
+footer {
+  background: blur(4px);
+  background-color: white;
+  text-align: center;
+  bottom: 0;
+  height: 8%;
+  position: fixed;
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+
+footer a {
+  margin-right: 20px;
+}
+
+footer img {
+  transition: 0.3s;
+}
+
+footer img:hover {
+  -webkit-transform:scale(1.5);
+}
+/* END OF FOOTER STYLE */
