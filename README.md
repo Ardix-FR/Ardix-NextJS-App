@@ -51,6 +51,67 @@ Ref: APP_not_connected.("Sign-in") > "Sign-up or Sign-in Function".(form)
 Ref: AUTH_0_FRAMEWORK.(API) > APP_connected.("Sign-out")
 ```
 
+# App Authentification 🔑
+All the authentication of the app is managed by a framework specially adapted to NextJS: <code>Auth0</code> (https://auth0.com/fr). The latter is equipped with a dashboard that can manage both users but also with which media, you can connect (login or registration): very practical !
+
+The auth0 integration starts with the entry point of the NextJS application (app.js) by enclosing it with a UserProvider tag :
+```javascript
+
+// Import balise with framework prerequies download @auth0/..
+import { UserProvider } from '@auth0/nextjs-auth0';
+
+function MyApp({ Component, pageProps }) {
+  // Return to the basic NextJS app but with enclosing UserProvider tag !
+  return (
+    <UserProvider>
+      <Component {...pageProps} />
+    </UserProvider>
+  )
+}
+```
+
+In any other component, you can import it like this :
+```javascript
+import { useUser } from '@auth0/nextjs-auth0';
+```
+
+Then, we define the different variables that we can find with the auth0 framework in the functions we want. These work like an API (see the Auth0 doc: https://auth0.com/docs/api) and we make a general request to the user, then we can specify what we want by putting a dot before the variable that we want to specify.
+
+```javascript
+
+// We declare the general variable User :
+const { user, error, isLoading } = useUser();
+
+// Then, we can associate some functions with specific renders, such as for errors or for loading.
+if (error) return <div>ERROR : {error.message}</div>;
+if (isLoading) return <div>... Loading</div>;
+
+// Already, we can do an general console.log with all user informations !
+console.log(user);
+
+// But if we want one specify information, we must do like this (for the name by example):
+console.log(user.name);
+```
+
+And lastly, we can check if a user is connected (with a sample if/else). For example, if we want to hide a component from an offline user, we do it like this (it also works for functions) :
+
+```javascript
+
+// Render (if/else) conditions :
+if (user) {
+  return (
+    <Normal_Component/>
+    <Secret_Components/>
+  ) 
+} else {
+  return (
+    <Normal_Components/>
+  )
+}
+```
+
+That's it !
+
 <div align="center">
   <h2>Contributors & Members of project :</h2>
   
