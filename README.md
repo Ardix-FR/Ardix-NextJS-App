@@ -58,4 +58,6 @@ Ref: AUTH_0_FRAMEWORK.(API) > APP_connected.("Sign-out")
   <a href="https://github.com/SkyX-ID-FR" target="_blank" title="SkyX [ID FR] / Main Develloper"><img width="50px" src="https://avatars.githubusercontent.com/u/89273191?v=4"/></a>&nbsp;
   <a href="https://github.com/Myrmidons-nath" target="_blank" title="Myrmidons-nath / Second Develloper"><img width="50px" src="https://avatars.githubusercontent.com/u/83139087?v=4"/></a>&nbsp;
   <a href="#" target="_blank" title="Antoine AYLT / Video Creator"><img width="50px" src="https://zupimages.net/up/22/21/uzig.jpg"/></a>
+  
+  <br><h8>All right reserved to Ardix© - Copyright 2022</h8>
 </div>
