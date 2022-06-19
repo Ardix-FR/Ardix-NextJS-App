@@ -51,5 +51,9 @@ Ref: APP_not_connected.("Sign-in") > "Sign-up or Sign-in Function".(form)
 Ref: AUTH_0_FRAMEWORK.(API) > APP_connected.("Sign-out")
 ```
 
-## Contributors & Members of project :
-<a href="#" target="_blank"><img width="60px" src="https://avatars.githubusercontent.com/u/89273191?v=4"/></a>
+<div align="center">
+  <h2>Contributors & Members of project :</h2>
+  
+  <a href="#" target="_blank" title="test"><img width="50px" src="https://avatars.githubusercontent.com/u/89273191?v=4"/></a>
+  <a href="#" target="_blank"><img width="50px" src="https://avatars.githubusercontent.com/u/89273191?v=4"/></a>
+</div>
