@@ -54,6 +54,8 @@ Ref: AUTH_0_FRAMEWORK.(API) > APP_connected.("Sign-out")
 <div align="center">
   <h2>Contributors & Members of project :</h2>
   
-  <a href="#" target="_blank" title="test"><img width="50px" src="https://avatars.githubusercontent.com/u/89273191?v=4"/></a>
-  <a href="#" target="_blank"><img width="50px" src="https://avatars.githubusercontent.com/u/89273191?v=4"/></a>
+  <a href="https://github.com/Xlator07" target="_blank" title="Xlator07 / Admin"><img width="50px" src="https://avatars.githubusercontent.com/u/104075872?v=4"/></a>&nbsp;
+  <a href="https://github.com/SkyX-ID-FR" target="_blank" title="SkyX [ID FR] / Main Develloper"><img width="50px" src="https://avatars.githubusercontent.com/u/89273191?v=4"/></a>&nbsp;
+  <a href="https://github.com/Myrmidons-nath" target="_blank" title="Myrmidons-nath / Second Develloper"><img width="50px" src="https://avatars.githubusercontent.com/u/83139087?v=4"/></a>&nbsp;
+  <a href="#" target="_blank" title="Antoine AYLT / Video Creator"><img width="50px" src="https://zupimages.net/up/22/21/uzig.jpg"/></a>
 </div>
