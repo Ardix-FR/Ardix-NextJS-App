@@ -6,7 +6,6 @@ This repository represents the dynamic app of the Ardix project. Developed in a 
 
 ## Script of DataBase Diagramm :
 ```mysql
-// ARDIX BACK-END FULL SYSTEM :
 // SERVER SECTION :
 Table Main_ARDIX_SERVER {
   IP "172.0.0.2"
@@ -52,4 +51,5 @@ Ref: APP_not_connected.("Sign-in") > "Sign-up or Sign-in Function".(form)
 Ref: AUTH_0_FRAMEWORK.(API) > APP_connected.("Sign-out")
 ```
 
-Coming Soon..
+## Contributors & Members of project :
+<a href="#" target="_blank"><img width="60px" src="https://avatars.githubusercontent.com/u/89273191?v=4"/></a>
