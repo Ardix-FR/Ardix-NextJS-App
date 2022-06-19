@@ -1,5 +1,5 @@
 <h1>Ardix NextJS App ⚙️</h1>
-This repository represents the dynamic app of the Ardix project. Developed in a ```NextJS``` environment, it is at the center of the project. The application is composed of a main server which manages the database and its hosting. Then, there is the client side where we find the entry point of the app which other than ``app.js`` and its various components which constitute the application.
+This repository represents the dynamic app of the Ardix project. Developed in a <code>NextJS</code> environment, it is at the center of the project. The application is composed of a main server which manages the database and its hosting. Then, there is the client side where we find the entry point of the app which other than <code>app.js</code> and its various components which constitute the application.
 
 <h2>To better illustrate all this, here is a summary diagram :</h2>
 <img src="https://zupimages.net/up/22/24/inib.png"/>
