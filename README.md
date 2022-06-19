@@ -51,3 +51,5 @@ Table "Sign-up or Sign-in Function" {
 Ref: APP_not_connected.("Sign-in") > "Sign-up or Sign-in Function".(form)
 Ref: AUTH_0_FRAMEWORK.(API) > APP_connected.("Sign-out")
 ```
+
+Coming Soon..
