@@ -23,12 +23,9 @@ const AddPostButton_connected = () => {
 
     function handleSubmit(e) {
         e.preventDefault();
-        localStorage.setItem('post_title', document.getElementById("post-title").value);
-        location.reload();
-    
-        /* console.log(document.getElementById("post-title").value);
+        console.log(document.getElementById("post-title").value);
         console.log(document.getElementById("post-description").value);
-        console.log(document.getElementById("post-requirements").value); */
+        console.log(document.getElementById("post-requirements").value);
     }
 } 
 

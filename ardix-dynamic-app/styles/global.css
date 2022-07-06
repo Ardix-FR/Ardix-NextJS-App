@@ -480,6 +480,44 @@ body {
   top: 4px
 }
 
+.content-card {
+  margin: 20px;
+  z-index: 10;
+  padding: 20px;
+  padding-bottom: 25px;
+  background-color: white;
+  width: 250px;
+  border-radius: 20px;
+}
+
+.content-card h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.content-card p {
+  font-size: 16px;
+  color: gray;
+  margin-left: 3px;
+  text-align: justify;
+}
+
+.content-card span {
+  background-color: #0b60da;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 3px;
+  padding-bottom: 9px;
+  cursor: pointer;
+  color: white;
+}
+
+.content-card img {
+  width: 40px;
+  border-radius: 100%;
+}
+
 /* FOOTER STYLE : */
 footer {
   background: blur(4px);

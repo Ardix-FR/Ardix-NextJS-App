@@ -1,10 +1,14 @@
+import { useUser } from '@auth0/nextjs-auth0';
+
 const Content = () => {
-    var post_title = localStorage.getItem('post_title');
+    const { user, error, isLoading } = useUser();
     
     return (
         <>
-            {post_title}
+            <div className='content-card'>
+                <p>coucou</p>
+            </div>
         </>
-    );
+    )
 } 
 export default Content;

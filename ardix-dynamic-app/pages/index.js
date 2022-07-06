@@ -19,7 +19,7 @@ const HeadProfile = () => {
   return (
     <>
       <Head>
-        <title>Ardix</title>
+        <title>Ardix App</title>
         <meta name="description" content="Ardix© is a project sharing platform aimed at the Arduino's world, but the latter also brings together a website, a web application and an API." />
         <link rel="icon" href="https://img.icons8.com/color/344/jira.png" />
         <link href='https://css.gg/log-in.css' rel='stylesheet'/>

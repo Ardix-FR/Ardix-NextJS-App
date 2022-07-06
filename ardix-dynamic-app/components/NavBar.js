@@ -2,7 +2,7 @@ import { useUser } from '@auth0/nextjs-auth0';
 
 const NavBar = () => {
     const { user, error, isLoading } = useUser();
-    // console.log("NavBar is ready !");
+ 
     if (user) {
         return (
             <div className="nav-bar">
